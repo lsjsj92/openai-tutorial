@@ -13,7 +13,7 @@ class OpenAIGpt:
     openai.api_key = os.getenv("OPENAI_API_KEY")
     response = openai.Completion.create(
       #model="text-davinci-003",
-      model="davinci:ft-wjtb-2023-01-29-10-42-22",
+      model="<Write your fine-tuning model>",
       prompt=f"{question}",
       temperature=args.temperature,
       max_tokens=100,
